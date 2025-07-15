@@ -1,7 +1,9 @@
 FROM php:8.4-fpm
 
 RUN apt-get update && apt-get install -y \
-    libfreetype6-dev
+    libfreetype6-dev \
+    zip \
+    unzip
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
