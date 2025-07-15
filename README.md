@@ -11,11 +11,14 @@
 git clone git@github.com:ivanitch/bizon-test.git .
 ```
 
-## 🚀 Запуск Docker
+## 🚀 Запуск Docker и установка зависимостей Composer
 ```bash
 # http://localhost
 make build && make up
+
+# Container php-fpm
+make app 
+
+# Composer
+composer install
 ```
-
-
-
